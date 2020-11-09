@@ -153,7 +153,8 @@ $(document).ready(function(){
 		 $('.dangchaydkmodal').show();
 		 $.ajax({
 					   type: "POST",
-					   url: base_url+'dichvu/dangki',
+					   //url: base_url+'/dichvu',
+					   url: base_url+'/send',
 					   data: $('.formdangki').serialize(), 
 					   success: function(data)
 					   {
@@ -225,7 +226,8 @@ $(document).ready(function(){
 		 $('.dangchayhome').show();
 		 $.ajax({
 					   type: "POST",
-					   url: base_url+'dichvu/dangki',
+					   //url: base_url+'/dichvu',
+					   url: base_url+'/send',
 					   data: $('.formdangkihome').serialize(), 
 					   success: function(data)
 					   {
