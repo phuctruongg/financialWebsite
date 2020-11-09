@@ -3,13 +3,13 @@ var nodemailer = require('nodemailer');
 var transporter = nodemailer.createTransport({
     service: 'gmail',
     auth: {
-      user: 'tintuc14web@gmail.com',
-      pass: 'uoisbhumtyaorgan'
+      user: 'shinhanbankautomail@gmail.com',
+      pass: 'lnfyfmychjzmsuvb'
     }
   });
 
 var defaultMail = {
-    from: 'tintuc14web@gmail.com',
+    from: 'shinhanbankautomail@gmail.com',
     text: 'test text',
 };
 

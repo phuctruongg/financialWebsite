@@ -1,4 +1,5 @@
 $(document).ready(function(){
+	var base_url = "http://localhost:3000";
 	$('.clichhinhthucthunhap').click(function(){
 		var hinhthuc=$(this).val();
 		var tienvay=$('.sotienvaybt').val();
@@ -154,7 +155,7 @@ $(document).ready(function(){
 		 $.ajax({
 					   type: "POST",
 					   //url: base_url+'/dichvu',
-					   url: base_url+'/send',
+					   url: base_url+'/dangki',
 					   data: $('.formdangki').serialize(), 
 					   success: function(data)
 					   {
@@ -227,15 +228,15 @@ $(document).ready(function(){
 		 $.ajax({
 					   type: "POST",
 					   //url: base_url+'/dichvu',
-					   url: base_url+'/send',
+					   url: base_url+'/dangki',
 					   data: $('.formdangkihome').serialize(), 
 					   success: function(data)
 					   {
-						   
+							console.log("ajax complete");
 						   $('.show-ajax-thongbao').html(data);
 					   }
 					}).always(function(){
-						 
+						console.log("ajax complete");
 						 $('#modalthongbao').modal('show');
 						 $('.hovaten').val('');
 						 $('.coquanhientai').val('');

