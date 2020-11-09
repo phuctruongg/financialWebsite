@@ -14,12 +14,12 @@ $(document).ready(function(){
 		{
 			var congty=$('.clichhinhthuccongty:checked').val();
 			$('.hidecongty').show();
-			$.post(base_url+'dichvu/bangtinh',{'tienvay':tienvay,'thoihan':thoihan,'sonam':congty},function(data){
+			$.post(base_url+'/bangtinh',{'tienvay':tienvay,'thoihan':thoihan,'sonam':congty},function(data){
     			 $('.showbangtinh').html(data);
             })
 		}else{
 			$('.hidecongty').hide();
-			$.post(base_url+'dichvu/bangtinh',{'tienvay':tienvay,'thoihan':thoihan,'sonam':0},function(data){
+			$.post(base_url+'/bangtinh',{'tienvay':tienvay,'thoihan':thoihan,'sonam':0},function(data){
     			 $('.showbangtinh').html(data);
             })
 		}
@@ -36,7 +36,7 @@ $(document).ready(function(){
 			$('.sotienvaybt').focus();
 			return false;
 		}	
-			$.post(base_url+'dichvu/bangtinh',{'tienvay':tienvay,'thoihan':thoihan,'sonam':congty},function(data){
+			$.post(base_url+'/bangtinh',{'tienvay':tienvay,'thoihan':thoihan,'sonam':congty},function(data){
     			 $('.showbangtinh').html(data);
             })
 	});
@@ -58,12 +58,12 @@ $(document).ready(function(){
 		{
 			var congty=$('.clichhinhthuccongty').val();
 			$('.hidecongty').show();
-			$.post(base_url+'dichvu/bangtinh',{'tienvay':tienvay,'thoihan':thoihan,'sonam':congty},function(data){
+			$.post(base_url+'/bangtinh',{'tienvay':tienvay,'thoihan':thoihan,'sonam':congty},function(data){
     			 $('.showbangtinh').html(data);
             })
 		}else{
 			$('.hidecongty').hide();
-			$.post(base_url+'dichvu/bangtinh',{'tienvay':tienvay,'thoihan':thoihan,'sonam':0},function(data){
+			$.post(base_url+'/bangtinh',{'tienvay':tienvay,'thoihan':thoihan,'sonam':0},function(data){
     			 $('.showbangtinh').html(data);
             })
 		}
@@ -85,12 +85,12 @@ $(document).ready(function(){
 		{
 			var congty=$('.clichhinhthuccongty').val();
 			$('.hidecongty').show();
-			$.post(base_url+'dichvu/bangtinh',{'tienvay':tienvay,'thoihan':thoihan,'sonam':congty},function(data){
+			$.post(base_url+'/bangtinh',{'tienvay':tienvay,'thoihan':thoihan,'sonam':congty},function(data){
     			 $('.showbangtinh').html(data);
             })
 		}else{
 			$('.hidecongty').hide();
-			$.post(base_url+'dichvu/bangtinh',{'tienvay':tienvay,'thoihan':thoihan,'sonam':0},function(data){
+			$.post(base_url+'/bangtinh',{'tienvay':tienvay,'thoihan':thoihan,'sonam':0},function(data){
     			 $('.showbangtinh').html(data);
             })
 		}

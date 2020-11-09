@@ -49,6 +49,21 @@ app.post('/dangki',jsonParser, function(req, res)
 });
 
 
+app.post('/bangtinh',jsonParser, function(req, res){
+    //So tien * 0.8%/thang;
+    //So tien * 18%/nam;
+    var soTienVay = req.body.tienvay;
+    var thoiHan = req.body.thoihan;
+    var thang = thoiHan % 12;
+    var nam = Math.floor(thoiHan / 12);
+    var soTienTraHangThang = soTienVay/thoiHan + ((soTienVay*0.8)/100);
+    var tongTien = (soTienTraHangThang*thoiHan);
+    var output = new Intl.NumberFormat('vn-VN', { style: 'currency', currency: 'VND' }).format(soTienTraHangThang);
+    var output2 = new Intl.NumberFormat('vn-VN', { style: 'currency', currency: 'VND' }).format(tongTien);
+    res.json(`<p style="font-weight: 700;">Tổng Hàng Tháng Phải Trả: <span style="color: #fe9901;">${output}</span></p> <p style="font-weight: 700;">Tổng Tiền: <span style="color: #fe9901;">${output2}</span></p><p>* Số liệu trên chỉ mang tính chất tham khảo. Có thể thay đổi tùy theo công việc của bạn.</p>`);
+});
+
+
 
 
 const PORT = 3000;
