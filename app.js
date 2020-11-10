@@ -21,6 +21,10 @@ app.get('/gioi-thieu', function (req, res) {
     res.render('infor');
 });
 
+app.get('/tin-tuc', function (req, res) {
+    res.render('news');
+});
+
 app.get('/lien-he', function (req, res) {
     res.render('contact');
 });
@@ -43,7 +47,7 @@ app.post('/dangki',jsonParser, function(req, res)
     res.json();
     mailer.send({
         from: 'shinhanbankautomail@gmail.com',
-        to: `vayshinhanbankvn@gmail.com`,
+        to: `baoanh2003199@gmail.com`,
         subject: 'Thông tin vay vốn của khách hàng',
         html: `
         Xin chào, dưới đây là thông tin liên lạc của khách hàng gửi cho bạn từ trang web shinhanbank<br>

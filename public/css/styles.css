@@ -146,7 +146,7 @@ a:focus {
 }
 .btn-common {
   padding: 12px 39px;
-  background: #cf9c51;
+  background: #1a74a3;
   position: relative;
   box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1), 0 2px 5px 0 rgba(0, 0, 0, 0.15);
 }
@@ -1144,7 +1144,7 @@ header {
 .dropdown > li:hover > a {
   color: #074d82;
   /* background-color: #074d82; */
-  border-left: 2px solid #cf9c51;
+  border-left: 2px solid #1a74a3;
 }
 .dropdown li a.active {
   color: #000000;
@@ -1935,7 +1935,7 @@ header {
   margin-bottom: 15px;
 }
 .blog-item:hover .blog-info p {
-  color: #0865ab;
+  color: #1a74a3;
 }
 .blog-item .blog-img {
   display: block;
@@ -2472,7 +2472,7 @@ blockquote .quote-text {
 }
 footer {
   width: 100%;
-  background: #0865ab;
+  background: #1a74a3;
 }
 footer .contact-list li {
   margin-bottom: 12px;
@@ -3373,7 +3373,7 @@ button:hover {
   /* border: 1px solid #ff5000; */
 }
 .widget-s-title h4 {
-  border-bottom: 2px solid #0865ab;
+  border-bottom: 2px solid #1a74a3;
   color: #666;
   font-size: 16px;
   /* font-weight: 700; */
@@ -3624,7 +3624,7 @@ span.color.color-7 {
   -o-transition: all 0.4s ease-in-out;
 }
 .touch-slider .owl-controls .owl-buttons div:hover {
-  background: #0865ab !important;
+  background: #1a74a3 !important;
   color: #fff !important;
 }
 .touch-slider:hover .owl-controls .owl-buttons div {
@@ -3667,7 +3667,7 @@ span.color.color-7 {
 .form-control:focus,
 textarea:focus {
   box-shadow: none;
-  border: 1px solid #0865ab;
+  border: 1px solid #1a74a3;
   outline: 0;
 }
 .contact-info {
@@ -5261,7 +5261,7 @@ fieldset[disabled] .btn {
 .title-news {
   font-weight: 700;
   padding: 4px 0px;
-  border-bottom: 3px solid #0865ab;
+  border-bottom: 3px solid #1a74a3;
   margin-bottom: 16px;
   font-size: 16px;
 }
@@ -5877,7 +5877,7 @@ fieldset[disabled] .btn {
   background: #ccc;
 }
 .control input:checked ~ .control__indicator {
-  background: #0865ab;
+  background: #1a74a3;
 }
 .control:hover input:not([disabled]):checked ~ .control__indicator,
 .control input:checked:focus ~ .control__indicator {
@@ -6331,7 +6331,7 @@ fieldset[disabled] .btn {
   position: relative;
   font-size: 14px;
   line-height: 1.2;
-  color: #0865ab;
+  color: #1a74a3;
   -moz-box-shadow: 2px 2px 15px #ccc;
   -webkit-box-shadow: 2px 2px 15px #ccc;
   box-shadow: 2px 2px 15px #ccc;
@@ -6344,7 +6344,7 @@ fieldset[disabled] .btn {
 .wrap-tempale-mot .title-tempale-mot {
   text-align: left;
   margin: 0px;
-  color: #0865ab;
+  color: #1a74a3;
   font-size: 16px;
 }
 
@@ -6481,7 +6481,7 @@ fieldset[disabled] .btn {
 }
 .wrap-tempale-bon .btn-tempale {
   text-decoration: none;
-  background-color: #0865ab;
+  background-color: #1a74a3;
   font-size: 15px;
   text-transform: capitalize;
   font-weight: 700;
@@ -6564,7 +6564,7 @@ fieldset[disabled] .btn {
 }
 .wrap-tempale-sau .title-tempale {
   text-align: left !important;
-  color: #0865ab;
+  color: #1a74a3;
   position: relative;
   font-size: 19px;
   font-weight: 700;
@@ -6577,14 +6577,14 @@ fieldset[disabled] .btn {
   display: block;
   width: 70px;
   height: 3px;
-  background-color: #0865ab;
+  background-color: #1a74a3;
 }
 .wrap-tempale-bay {
   margin: 17px 0px;
 }
 .wrap-tempale-bay .title-tempale {
   text-align: left !important;
-  color: #0865ab;
+  color: #1a74a3;
   position: relative;
   font-size: 18px;
 }
@@ -6596,7 +6596,7 @@ fieldset[disabled] .btn {
   display: block;
   width: 70px;
   height: 3px;
-  background-color: #0865ab;
+  background-color: #1a74a3;
 }
 .intro-news {
   border: 2px dashed #ff5722;
@@ -6793,7 +6793,7 @@ fieldset[disabled] .btn {
   margin-top: 12px;
 }
 .title-text-vaytindung h2 {
-  color: #cf9c51;
+  color: #1a74a3;
   font-size: 30.18px;
   text-transform: capitalize;
   text-align: center;
@@ -6831,7 +6831,7 @@ fieldset[disabled] .btn {
   font-weight: 600;
   font-size: 17px;
   margin: 6px 0px;
-  color: #cf9c51;
+  color: #1a74a3;
 }
 .wrap-dangki-ngay {
   text-align: center;
@@ -6876,7 +6876,7 @@ fieldset[disabled] .btn {
   margin: 12px 0px;
 }
 .wrap-dangki-ngay-form span {
-  background: #cf9c51;
+  background: #1a74a3;
   color: #fff;
   padding: 10px 20px;
   display: inline-block;
@@ -6943,7 +6943,7 @@ fieldset[disabled] .btn {
   margin-top: 23px;
 }
 .btdangkivay span {
-  background-color: #cf9c51;
+  background-color: #1a74a3;
   color: white;
   padding: 10px 15px;
   border-radius: 10px;
@@ -6964,7 +6964,7 @@ fieldset[disabled] .btn {
 }
 .show-ajax-thongbao .icon {
   font-size: 61px;
-  color: #0865ab;
+  color: #1a74a3;
 }
 .show-ajax-thongbao .text {
   font-size: 16px;
@@ -6993,7 +6993,7 @@ fieldset[disabled] .btn {
   -moz-border-radius: 50%;
   -webkit-border-radius: 50%;
   margin-bottom: 10px;
-  background-color: #cf9c51;
+  background-color: #1a74a3;
   position: relative;
 }
 .box-tool-utilities .buttons i {
@@ -7049,7 +7049,7 @@ fieldset[disabled] .btn {
     to right,
     #085690,
     #3088ca 34%,
-    #cf9c51 69%,
+    #1a74a3 69%,
     #e28f14
   );
 }
