@@ -57,9 +57,20 @@ app.post('/bangtinh',jsonParser, function(req, res){
     var thang = thoiHan % 12;
     var nam = Math.floor(thoiHan / 12);
     var soTienTraHangThang = soTienVay/thoiHan + ((soTienVay*0.8)/100);
-    var tongTien = (soTienTraHangThang*thoiHan);
-    var output = new Intl.NumberFormat('vn-VN', { style: 'currency', currency: 'VND' }).format(soTienTraHangThang);
-    var output2 = new Intl.NumberFormat('vn-VN', { style: 'currency', currency: 'VND' }).format(tongTien);
+    var tongTien = Math.ceil((soTienTraHangThang*thoiHan));
+    var output;
+    var output2;
+    if(soTienVay>456)
+    {
+        output= new Intl.NumberFormat('vn-VN', { style: 'currency', currency: 'VND' }).format(soTienTraHangThang);
+        output2 = new Intl.NumberFormat('vn-VN', { style: 'currency', currency: 'VND' }).format(tongTien);
+    }
+    else
+    {
+        output = 0;
+        output2=0;
+    }
+   
     res.json(`<p style="font-weight: 700;">Tổng Hàng Tháng Phải Trả: <span style="color: #fe9901;">${output}</span></p> <p style="font-weight: 700;">Tổng Tiền: <span style="color: #fe9901;">${output2}</span></p><p>* Số liệu trên chỉ mang tính chất tham khảo. Có thể thay đổi tùy theo công việc của bạn.</p>`);
 });
 
