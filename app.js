@@ -8,8 +8,21 @@ app.use(bodyParser.urlencoded({ extended: false }))
 app.engine('handlebars', exphbs());
 app.set('view engine', 'handlebars');
 app.use('/public',express.static(__dirname + '/public'));
+
+
+app.get('/home', function (req, res) {
+    res.render('home');
+});
 app.get('/', function (req, res) {
     res.render('home');
+});
+
+app.get('/gioi-thieu', function (req, res) {
+    res.render('infor');
+});
+
+app.get('/lien-he', function (req, res) {
+    res.render('contact');
 });
 
 app.post('/dangki',jsonParser, function(req, res)
