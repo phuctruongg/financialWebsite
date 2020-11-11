@@ -1,5 +1,5 @@
 $(document).ready(function(){
-	var base_url = "http://localhost:3000";
+	var base_url = window.location.origin;
 	$('.clichhinhthucthunhap').click(function(){
 		var hinhthuc=$(this).val();
 		var tienvay=$('.sotienvaybt').val();
@@ -862,7 +862,7 @@ $(document).ready(function(){
 			 alert('Vui lòng nhập ghi chú');
 			 return false;
 		 }
-		 $.post(base_url+'contact/gui',{'name':name,'phone':phone,'mail':mail,'ghichu':ghichu},function(data){
+		 $.post(base_url+'/lien-he',{'name':name,'phone':phone,'mail':mail,'ghichu':ghichu},function(data){
 	        }).always(function(){
 	        	$('.tenlienhe').val('');
 	   		 $('.phonelienhe').val('');

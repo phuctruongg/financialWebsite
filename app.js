@@ -21,6 +21,26 @@ app.get('/gioi-thieu', function (req, res) {
     res.render('infor');
 });
 
+app.get('/ho-tro-cong-nhan-va-tu-doanh', function (req, res) {
+    res.render('support');
+});
+
+app.get('/vay-the-chap-nha-dat', function (req, res) {
+    res.render('mortgage');
+});
+
+app.get('/the-tin-dung-shinhanbank', function (req, res) {
+    res.render('creditcard');
+});
+
+app.get('/vay-tieu-dung', function (req, res) {
+    res.render('consumption');
+});
+
+app.get('/san-pham-dich-vu-shinhanbank', function (req, res) {
+    res.render('services');
+});
+
 app.get('/tin-tuc', function (req, res) {
     res.render('news');
 });
@@ -45,7 +65,7 @@ app.post('/dangki',jsonParser, function(req, res)
         hinhthuc: req.body.hinhthuc
     }
     res.json();
-    mailer.send({
+    /*mailer.send({
         from: 'shinhanbankautomail@gmail.com',
         to: `baoanh2003199@gmail.com`,
         subject: 'Thông tin vay vốn của khách hàng',
@@ -62,7 +82,31 @@ app.post('/dangki',jsonParser, function(req, res)
         Hình thức nhận: ${customer.hinhthuc}<br>
         (Đây là thư tự động vui lòng không phản hồi)
         `
-    });
+    });*/
+});
+
+app.post('/lien-he',jsonParser, function(req, res)
+{
+    console.log(req.body);
+    res.json();
+    /*mailer.send({
+        from: 'shinhanbankautomail@gmail.com',
+        to: `baoanh2003199@gmail.com`,
+        subject: 'Thông tin vay vốn của khách hàng',
+        html: `
+        Xin chào, dưới đây là thông tin liên lạc của khách hàng gửi cho bạn từ trang web shinhanbank<br>
+        Họ tên khách hàng: ${customer.ten}<br> 
+        Ngày sinh: ${customer.ngaysinh}<br> 
+        Số điện thoại: ${customer.sdt}<br> 
+        Địa chỉ: ${customer.diachi}<br> 
+        Cơ quan: ${customer.coquan}<br> 
+        Số chứng minh nhân dân:${customer.socmnd}<br> 
+        Thu nhập hàng tháng: ${customer.thunhap}<br>
+        Số tiên cần vay:${customer.sotien}<br> 
+        Hình thức nhận: ${customer.hinhthuc}<br>
+        (Đây là thư tự động vui lòng không phản hồi)
+        `
+    });*/
 });
 
 
