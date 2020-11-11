@@ -38,7 +38,7 @@ app.get('/vay-tieu-dung', function (req, res) {
 });
 
 app.get('/san-pham-dich-vu-shinhanbank', function (req, res) {
-    res.render('services');
+    res.render('creditcard');
 });
 
 app.get('/tin-tuc', function (req, res) {
