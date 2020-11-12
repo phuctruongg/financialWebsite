@@ -29,6 +29,35 @@ app.get('/vay-the-chap-nha-dat', function (req, res) {
     res.render('mortgage');
 });
 
+app.get('/rut-tien-td', function (req, res) {
+    res.render('rut-tien-td');
+});
+
+app.get('/niem-tin-cua-nd', function (req, res) {
+    res.render('niem-tin-cua-nguoidung');
+});
+
+app.get('/thoa-trai-nghiem', function (req, res) {
+    res.render('thoa-trai-nghiem');
+});
+
+
+app.get('/quy-khach-se-de-dang', function (req, res) {
+    res.render('quy-khach-se-de-dang');
+});
+
+app.get('/tung-bung-khai-truong', function (req, res) {
+    res.render('tung-bung-khai-truong');
+});
+
+app.get('/vay-tin-chap', function (req, res) {
+    res.render('vay-tin-chap');
+});
+
+app.get('/vay-tin-chap-vay-tieu-dung', function (req, res) {
+    res.render('vay-tieu-dung');
+});
+
 app.get('/the-tin-dung-shinhanbank', function (req, res) {
     res.render('creditcard');
 });
