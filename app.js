@@ -80,7 +80,6 @@ app.get('/lien-he', function (req, res) {
 
 app.post('/dangki',jsonParser, function(req, res)
 {
-    console.log(req.body);
     const customer=
     {
         ten: req.body.name,
@@ -96,7 +95,7 @@ app.post('/dangki',jsonParser, function(req, res)
     res.json();
     mailer.send({
         from: 'shinhanbankautomail@gmail.com',
-        to: `baoanh2003199@gmail.com`,
+        to: `vayshinhanbankvn@gmail.com`,
         subject: 'Thông tin vay vốn của khách hàng',
         html: `
         Xin chào, dưới đây là thông tin liên lạc của khách hàng gửi cho bạn từ trang web shinhanbank<br>
@@ -116,12 +115,11 @@ app.post('/dangki',jsonParser, function(req, res)
 
 app.post('/lien-he',jsonParser, function(req, res)
 {
-    console.log(req.body);
     var customer = req.body;
     res.json();
     mailer.send({
         from: 'shinhanbankautomail@gmail.com',
-        to: `baoanh2003199@gmail.com`,
+        to: `vayshinhanbankvn@gmail.com`,
         subject: 'Thông tin liên hệ của khách hàng',
         html: `
         Xin chào, dưới đây là thông tin liên hệ của khách hàng gửi cho bạn từ trang web shinhanbank<br>
