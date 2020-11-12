@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests"> 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="description" content=" Shinhanbank hỗ trợ vay tín chấp với lãi suất cực kì ưu đãi chỉ từ 0.6% / 1 tháng , ưu đãi lãi suất cho giáo viên và nhân viên lương cao, khoản vay cao từ 50 đến 900 tr.">
@@ -281,6 +282,7 @@ $('.sotienvay').divide({delimiter: ',',
  });
  
  $(function() {
+     console.log("test testse")
      $("img.lazy").lazyload({
              effect : "fadeIn",
              threshold:100,
