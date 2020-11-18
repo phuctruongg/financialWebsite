@@ -6929,6 +6929,51 @@ fieldset[disabled] .btn {
   line-height: 20px;
   padding: 0 20px;
 }
+
+.wrap-footer2-text {
+  background-color: #ffffff;
+  padding-bottom: 49px;
+}
+.wrap-footer2-text .item {
+  text-align: center;
+  margin-bottom: 15px;
+}
+.wrap-footer2-text .number {
+  width: 72px;
+  height: 68px;
+  display: inline-block;
+  background: url("../image/bg_number.png");
+  text-align: center;
+  line-height: 68px;
+  color: #fff;
+  font-weight: 700;
+  font-size: 40px;
+  margin-bottom: 20px;
+}
+
+.wrap-footer2-text .title {
+  width: 100%;
+  display: inline-block;
+  margin: 0;
+  text-transform: uppercase;
+  color: #333;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 700;
+  padding-bottom: 10px;
+}
+.wrap-footer2-text .item .text {
+  width: 100%;
+  display: inline-block;
+  margin: 0;
+  color: #555;
+  text-align: center;
+  font-size: 14px;
+  line-height: 20px;
+  padding: 0 20px;
+}
+
+
 .wrap-news-home {
   padding-bottom: 50px;
 }
