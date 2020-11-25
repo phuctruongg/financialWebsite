@@ -49,7 +49,8 @@ app.get('/lien-he', function (req, res) {
 app.get('/webhook',function (req, res){
     var signature = "bd8827760bd833763acd8f17882c099cba8350cce7132377a892a282c5cff944";
     var DataInput  = req.body;
-    res.render('webhook',{Data: DataInput});
+    console.log(DataInput.length);
+    res.render('webhook',{Data: DataInput, NotExists: DataInput.length===undefined});
 })
 
 app.use(function(req, res,next){

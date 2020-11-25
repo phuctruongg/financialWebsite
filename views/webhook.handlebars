@@ -40,7 +40,11 @@ background: linear-gradient(to right, #5B86E5, #36D1DC); /* W3C, IE 10+/ Edge, F
 </div>
 <div class="row" style="margin-top: 21px">
     <div class="col-xs-12 col-sm-6">
+        {{#if this.NotExists}}
+        <p>Không có dữ liệu</p>
+        {{else}}
         {{Data}}
+        {{/if}}
     </div>
     <div class="col-xs-12 col-sm-6">
     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3919.133635067979!2d106.658652414468!3d10.801075461692529!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3175292db3ef3599%3A0x8215e66b758431f8!2sShinhan%20Bank%20CCPL%20Vay%20t%C3%ADn%20ch%E1%BA%A5p!5e0!3m2!1svi!2s!4v1605188113265!5m2!1svi!2s" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
