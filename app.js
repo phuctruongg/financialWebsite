@@ -50,6 +50,13 @@ app.use(function(req, res,next){
     res.status(404).render('404');
 })
 
+app.get('/webhook',function (req, res){
+    var signature = "bd8827760bd833763acd8f17882c099cba8350cce7132377a892a282c5cff944";
+    var rawInput = file_get_contents("php://input");
+    var DataInput  = JSON.parse(req.body);
+    res.send(DataInput);
+})
+
 app.post('/dangki',jsonParser, function(req, res)
 {
     const customer=
