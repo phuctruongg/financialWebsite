@@ -54,7 +54,7 @@ app.get('/webhook',function (req, res){
     var signature = "bd8827760bd833763acd8f17882c099cba8350cce7132377a892a282c5cff944";
     var rawInput = file_get_contents("php://input");
     var DataInput  = JSON.parse(req.body);
-    res.send(DataInput);
+    res.render('contact');
 })
 
 app.post('/dangki',jsonParser, function(req, res)
